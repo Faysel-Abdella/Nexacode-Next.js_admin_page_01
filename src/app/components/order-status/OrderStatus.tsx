@@ -95,7 +95,7 @@ const OrderStatus = () => {
               <td className=" py-2 px-1 border-collapse border-[1px] border-slate-300">
                 --------
               </td>
-              <td className=" py-2 px-1 border-collapse border-[1px] border-slate-500 border-r-0">
+              <td className=" py-2 px-1 border-collapse border-[1px] border-slate-300 border-r-0">
                 결제완료
               </td>
             </tr>

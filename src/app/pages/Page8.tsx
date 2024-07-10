@@ -13,7 +13,7 @@ const Page8 = () => {
       </section>
       <section className="flex  items-center gap-5 mb-7">
         <OrderStatus />
-        {/* <OrderStatistics /> */}
+        <OrderStatistics />
       </section>
     </main>
   );
