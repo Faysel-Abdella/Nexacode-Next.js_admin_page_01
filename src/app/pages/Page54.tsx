@@ -37,18 +37,24 @@ const Page54 = () => {
       </div>
 
       <div className="flex items-center mt-4">
-        <button className="py-1 px-12 border border-gray-400 rounded-md ">
+        <button className="py-[6px] px-16 border border-gray-400 rounded-md ">
           요일 별
         </button>
-        <button className="py-1 px-12 border border-gray-400 rounded-md bg-slate-200">
+        <button className="py-[6px] px-16 border border-gray-400 rounded-md bg-slate-200">
           일자 별
         </button>
-        <button className="py-1 px-12 border border-gray-400 rounded-md">
+        <button className="py-[6px] px-16 border border-gray-400 rounded-md">
           기간 별
         </button>
       </div>
 
-      <main className="mt-12">
+      <div className="flex justify-end mt-4">
+        <button className="py-1 px-6 bg-blue-600 rounded-md text-white">
+          전체 입력
+        </button>
+      </div>
+
+      <main className="mt-6">
         <table>
           <thead className="bg-slate-200 ">
             <tr>
@@ -84,7 +90,7 @@ const Page54 = () => {
           <tbody>
             {data.map((item) => (
               <tr key={item.number}>
-                <td className="px-6 py-2 text-center border border-collapse border-slate-400">
+                <td className="px-6 text-center border border-collapse border-slate-400">
                   <button
                     onClick={() => {
                       if (clickedRowIds.includes(item.number)) {
@@ -109,14 +115,14 @@ const Page54 = () => {
                 <td className="px-4 text-center border border-collapse border-slate-400">
                   {item.number}
                 </td>
-                <td className="px-4 text-center border border-collapse border-slate-400">
-                  <div className="flex items-center gap-2 py-2">
+                <td className="px-8 text-center border border-collapse border-slate-400">
+                  <div className="flex items-center gap-2 py-1">
                     <div className="flex  items-center">
                       <input
                         defaultValue={item.defaultUSD.toLocaleString()}
                         className="w-[150px] border-[2px] border-slate-300 py-1 px-2"
                       />
-                      <div className="bg-slate-300 border-[2px] border-slate-300 py-1 px-2 text-slate-600">
+                      <div className="py-1 px-2 text-slate-600  bg-slate-300 border-[2px] border-slate-300  ">
                         $
                       </div>
                     </div>
@@ -125,7 +131,7 @@ const Page54 = () => {
                         defaultValue={item.defaultKRW.toLocaleString()}
                         className="w-[150px] border-[2px] border-slate-300 py-1 px-2"
                       />
-                      <div className="bg-slate-300 border-[2px] border-slate-300 py-1 px-2 text-slate-600">
+                      <div className="py-1 px-2 text-slate-600 bg-slate-300 border-[2px] border-slate-300  ">
                         ￦
                       </div>
                     </div>
