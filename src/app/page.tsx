@@ -4,6 +4,7 @@ import Page8 from "./pages/Page8";
 import Page52 from "./pages/Page52";
 import Page53 from "./pages/Page53";
 import Page54 from "./pages/Page54";
+import Page56 from "./pages/Page56";
 
 export default function Home() {
   return (
@@ -40,6 +41,15 @@ export default function Home() {
           Page number 54 & 55 with modal 👇👇👇
         </h1>
         <Page54 />
+      </section>
+
+      {/* Page number 56*/}
+
+      <section>
+        <h1 className="text-center font-bold text-[30px] text-black my-6 border w-full px-10">
+          Page 56 👇👇👇
+        </h1>
+        <Page56 />
       </section>
     </main>
   );
