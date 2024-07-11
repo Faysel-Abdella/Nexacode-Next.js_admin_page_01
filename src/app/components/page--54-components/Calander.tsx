@@ -9,18 +9,24 @@ const Calendar = ({
   events: { title: string; date: string }[];
 }) => {
   const headerToolbarOptions = {
-    // left: "today",
-    // center: "2024년 1월",
     right: "",
   };
+
   const dayCellContent = (arg: any) => {
     const date = arg.date.getDate();
-    const price = getPriceForDate(date); // Replace with your logic to get the price for the date
+    const fullDate = new Date(arg.date.getTime() + 24 * 60 * 60 * 1000)
+      .toISOString()
+      .split("T")[0];
+    const price = getPriceForDate(fullDate);
+    const isBold = price !== "";
+
+    console.log(price, fullDate, date, isBold);
 
     return (
       <div className="date-cell">
-        <span className="date text-black font-bold">{date}</span>
-        {/* <span className="price text-[12px]">{price}</span> */}
+        <span className={`date text-black ${isBold ? "font-bold" : ""}`}>
+          {date}
+        </span>
       </div>
     );
   };
@@ -34,7 +40,7 @@ const Calendar = ({
   return (
     <div>
       <div>
-        <h3 className="text-black text-center font-bold mb-6">2024년 1월</h3>
+        <h3 className="text-black text-center font-bold my-6">2024년 1월</h3>
       </div>
       <FullCalendar
         plugins={[dayGridPlugin]}

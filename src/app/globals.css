@@ -74,6 +74,7 @@ body {
   text-align: center;
   height: 10px;
   line-height: 10px;
+  width: 70px;
   padding: 0;
   margin: 0;
 }
@@ -90,10 +91,10 @@ body {
   margin-right: 2px;
 }
 
+/* Important */
 .fc-day-disabled {
-  /* background-color: #fff;
-  display: hidden; */
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Important */
@@ -103,14 +104,51 @@ body {
   align-items: center;
 }
 
+/* Important */
 .fc-daygrid-day-events {
-  /* display: flex; */
-  background: none;
-  font-size: large;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+/* important */
+.fc .fc-daygrid-day-events {
+  margin-top: 0;
 }
 
 /* Important */
 .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
   min-height: 20px;
+}
+
+/* Important */
+.fc-event-title.fc-sticky {
+  background-color: white;
+  color: black;
+}
+
+/* Important */
+.fc-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+/* Important */
+.fc-event {
+  border: none !important;
+}
+/* Important */
+.fc-view-harness.fc-view-harness-active {
+  width: 500px;
+  height: 250px !important;
+}
+
+/* Important */
+.fc-h-event {
+  background-color: transparent;
+}
+
+/* Important */
+.fc-scroller {
+  overflow: hidden !important;
 }
