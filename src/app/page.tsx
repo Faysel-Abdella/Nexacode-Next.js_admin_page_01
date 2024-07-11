@@ -33,11 +33,11 @@ export default function Home() {
         <Page53 />
       </section>
 
-      {/* Page number 54 */}
+      {/* Page number 54 & 55 with modal */}
 
       <section>
         <h1 className="text-center font-bold text-[30px] text-black my-6 border w-full px-10">
-          Page number 54 👇👇👇
+          Page number 54 & 55 with modal 👇👇👇
         </h1>
         <Page54 />
       </section>
