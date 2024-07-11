@@ -1,8 +1,8 @@
 import React from "react";
-import PriceAlert from "../components/price-alert/PriceAlert";
-import OneToOneQuery from "../components/one-to-one-query/OneToOneQuery";
-import OrderStatus from "../components/order-status/OrderStatus";
-import OrderStatistics from "../components/order-statistics/OrderStatistics";
+import PriceAlert from "../components/page-8-components/price-alert/PriceAlert";
+import OneToOneQuery from "../components/page-8-components/one-to-one-query/OneToOneQuery";
+import OrderStatus from "../components/page-8-components/order-status/OrderStatus";
+import OrderStatistics from "../components/page-8-components/order-statistics/OrderStatistics";
 
 const Page8 = () => {
   return (

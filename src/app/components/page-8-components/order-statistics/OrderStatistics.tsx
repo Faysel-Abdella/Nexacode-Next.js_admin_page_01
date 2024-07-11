@@ -25,33 +25,33 @@ const OrderStatistics = () => {
   const data: orderStatisticsDataType[] = [
     {
       name: "12-25(월)",
-      order: 500000,
-      cancellation: 100000,
+      order: 200000,
+      cancellation: 250000,
     },
     {
       name: "12-26(월)",
-      order: 200000,
-      cancellation: 100000,
+      order: 400000,
+      cancellation: 350000,
     },
     {
       name: "12-27(월)",
-      order: 600000,
-      cancellation: 100000,
+      order: 450000,
+      cancellation: 500000,
     },
     {
       name: "12-28(월)",
-      order: 600000,
-      cancellation: 100000,
+      order: 200000,
+      cancellation: 150000,
     },
     {
       name: "12-29(월)",
       order: 600000,
-      cancellation: 100000,
+      cancellation: 300000,
     },
     {
       name: "12-30(월)",
-      order: 600000,
-      cancellation: 100000,
+      order: 400000,
+      cancellation: 350000,
     },
   ];
   const yAxisColor = "#000000";
@@ -98,7 +98,7 @@ const OrderStatistics = () => {
             left: 20,
             bottom: 5,
           }}
-          barCategoryGap={100}
+          // className="text-[29px]"
         >
           <CartesianGrid
             vertical={false}
@@ -108,9 +108,9 @@ const OrderStatistics = () => {
 
           <XAxis dataKey="name" axisLine={{ stroke: yAxisColor }} />
           <YAxis
-            ticks={[100000, 500000, 1000000, 5000000, 10000000]}
+            ticks={[100000, 200000, 300000, 400000, 500000]}
             axisLine={{ stroke: yAxisColor }}
-            domain={[100000, 500000, 1000000, 5000000, 10000000]}
+            domain={[100000, 200000, 300000, 400000, 500000]}
           />
           <Tooltip />
 
