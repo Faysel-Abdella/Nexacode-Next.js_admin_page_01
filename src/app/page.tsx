@@ -3,6 +3,7 @@ import Image from "next/image";
 import PriceAlert from "./components/page-8-components/price-alert/PriceAlert";
 import Page8 from "./pages/Page8";
 import Page52 from "./pages/Page52";
+import Page53 from "./pages/Page53";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       {/* Page number 8 */}
       <section>
         <h1 className="text-center font-bold text-[30px] text-black  my-6 border w-full px-10">
-          Page number 8
+          Page number 8 👇👇👇
         </h1>
         <Page8 />
       </section>
@@ -18,9 +19,18 @@ export default function Home() {
       {/* Page number 52 */}
       <section>
         <h1 className="text-center font-bold text-[30px] text-black my-6 border w-full px-10">
-          Page number 52
+          Page number 52 👇👇👇
         </h1>
         <Page52 />
+      </section>
+
+      {/* Page number 53 */}
+
+      <section>
+        <h1 className="text-center font-bold text-[30px] text-black my-6 border w-full px-10">
+          Page number 53 👇👇👇
+        </h1>
+        <Page53 />
       </section>
     </main>
   );

@@ -28,6 +28,7 @@ const RadioInputWithLabel = ({
         className={`h-[18px] w-[18px] ${inputStyles}`}
         checked={checked}
         onClick={handleClick}
+        readOnly
       />
       <label className={`text-black ${labelStyles}`}>{label}</label>
     </div>

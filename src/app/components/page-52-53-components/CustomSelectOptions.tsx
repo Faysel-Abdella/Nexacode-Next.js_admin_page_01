@@ -12,10 +12,9 @@ const CustomSelectOptions = ({
   return (
     <select
       className={` py-1 px-1 bg-white text-black border border-gray-900 ${outerStyles}`}
+      defaultValue={label}
     >
-      <option disabled selected>
-        {label}
-      </option>
+      <option disabled>{label}</option>
       {options.map((option) => (
         <option key={option}>{option}</option>
       ))}
