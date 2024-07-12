@@ -5,7 +5,7 @@ import Calendar from "../components/page-56-components/Calender";
 
 const Page56 = () => {
   const events = [
-    { title: "135,0000", date: "2024-07-01" },
+    { title: "1,350,000", date: "2024-07-01" },
     { title: "135,000", date: "2024-07-10" },
     { title: "135,000", date: "2024-07-11" },
     { title: "135,000", date: "2024-07-12" },
