@@ -107,9 +107,16 @@ body {
 /* Important */
 .fc-daygrid-day-events {
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+/* Important */
+.fc-direction-ltr .fc-daygrid-event.fc-event-end {
+  margin-right: 0;
 }
 
 /* important */
