@@ -87,7 +87,7 @@ const OrderStatistics = () => {
         </div>
       </div>
 
-      <ResponsiveContainer width={650} aspect={1.5} height={265}>
+      <ResponsiveContainer width={650} aspect={1.7} height={265}>
         <BarChart
           //   width={300}
           //   height={100}
@@ -98,7 +98,7 @@ const OrderStatistics = () => {
             left: 20,
             bottom: 5,
           }}
-          // className="text-[29px]"
+          className="text-[22px] font-semibold"
         >
           <CartesianGrid
             vertical={false}
