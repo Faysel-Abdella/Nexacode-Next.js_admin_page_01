@@ -71,7 +71,7 @@ const OrderStatistics = () => {
   //   const yAxisDomain = [0, getMax([1000, ...yTicks])];
 
   return (
-    <section className="min-w-[650px] border-[3px] border-slate-300">
+    <section className="min-w-[550px] border-[3px] border-slate-300">
       <header className="flex items-center justify-between bg-black text-white p-2  border-slate-500 border-collapse">
         <h2>주문통계</h2>
       </header>

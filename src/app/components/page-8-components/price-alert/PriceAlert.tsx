@@ -14,7 +14,7 @@ const AlertRow = ({ date, isLast }: { date: string; isLast?: boolean }) => {
 
 const PriceAlert = () => {
   return (
-    <section className="min-w-[650px] border-[3px] border-slate-300">
+    <section className="min-w-[550px] border-[3px] border-slate-300">
       <header className="flex items-center justify-between bg-black text-white p-2 border-b-[3px] border-slate-500">
         <h2>가격 알림</h2>
         <button className="flex justify-center items-center font-bold px-2 bg-slate-400">

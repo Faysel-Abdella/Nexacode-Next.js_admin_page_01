@@ -2,7 +2,7 @@ import React from "react";
 
 const OrderStatus = () => {
   return (
-    <section className="min-w-[650px] border-[3px] border-slate-300">
+    <section className="min-w-[550px] border-[3px] border-slate-300">
       <header className="flex items-center justify-between bg-black text-white p-2  border-slate-500 border-collapse">
         <h2>주문현황</h2>
         <button className="flex justify-center items-center font-bold px-2 bg-slate-400">
@@ -14,17 +14,17 @@ const OrderStatus = () => {
         <table className="w-full">
           <thead className="bg-gray-500 font-semibold ">
             <tr>
-              <th className="px-10 py-2 border-collapse border-[1px]  border-slate-300"></th>
-              <th className="px-10 py-2 border-collapse border-[1px] border-slate-300">
+              <th className="px-3 py-2 border-collapse border-[1px]  border-slate-300"></th>
+              <th className="px-3 py-2 border-collapse border-[1px] border-slate-300">
                 주문자명
               </th>
-              <th className="px-10 py-2 border-collapse border-[1px] border-slate-300">
+              <th className="px-3 py-2 border-collapse border-[1px] border-slate-300">
                 주문방법
               </th>
-              <th className="px-7 py-2 border-collapse border-[1px] border-slate-300">
+              <th className="px-3 py-2 border-collapse border-[1px] border-slate-300">
                 주문금액
               </th>
-              <th className="px-7 py-2 border-collapse border-[1px] border-slate-300">
+              <th className="px-3 py-2 border-collapse border-[1px] border-slate-300">
                 주문상태
               </th>
             </tr>

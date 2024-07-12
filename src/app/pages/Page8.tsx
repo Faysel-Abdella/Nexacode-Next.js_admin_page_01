@@ -7,7 +7,7 @@ import OrderStatistics from "../components/page-8-components/order-statistics/Or
 const Page8 = () => {
   return (
     <main>
-      <section className="flex items-center gap-5 mb-7">
+      <section className="flex items-center justify-center gap-5 mb-7 ">
         <PriceAlert />
         <OneToOneQuery />
       </section>
