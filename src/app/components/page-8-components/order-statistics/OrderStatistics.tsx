@@ -89,16 +89,15 @@ const OrderStatistics = () => {
 
       <ResponsiveContainer width={650} aspect={1.7} height={265}>
         <BarChart
-          //   width={300}
+          // width={100}
           //   height={100}
           data={data}
           margin={{
             top: 5,
-            right: 30,
+            // right: 30,
             left: 20,
             bottom: 5,
           }}
-          className="text-[22px] font-semibold"
         >
           <CartesianGrid
             vertical={false}
@@ -106,11 +105,17 @@ const OrderStatistics = () => {
             strokeDasharray={1}
           />
 
-          <XAxis dataKey="name" axisLine={{ stroke: yAxisColor }} />
+          <XAxis
+            dataKey="name"
+            axisLine={{ stroke: yAxisColor }}
+            interval={0}
+            className="text-[18px] font-semibold "
+          />
           <YAxis
             ticks={[100000, 200000, 300000, 400000, 500000]}
             axisLine={{ stroke: yAxisColor }}
             domain={[100000, 200000, 300000, 400000, 500000]}
+            className="text-[18px] font-semibold"
           />
           <Tooltip />
 
